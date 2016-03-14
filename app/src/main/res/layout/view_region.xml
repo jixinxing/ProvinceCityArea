@@ -4,7 +4,6 @@
     android:layout_height="@dimen/expand_tab_eara_height"
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
-
     android:orientation="horizontal" >
 
         <ListView

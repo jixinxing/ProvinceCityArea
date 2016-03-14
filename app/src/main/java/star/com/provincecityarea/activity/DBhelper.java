@@ -23,6 +23,11 @@ public class DBhelper {
 		dbm = new DBManager(context);
 	}
 
+	/**
+	 * 根据省份的pcode，得到城市city
+	 * @param pcode
+	 * @return
+     */
 	public ArrayList<Area> getCity(String pcode) {
 		dbm.openDatabase();
 		db = dbm.getDatabase();
@@ -61,6 +66,11 @@ public class DBhelper {
 		return list;
 
 	}
+
+	/**
+	 * 省份
+	 * @return
+     */
 	public ArrayList<Area> getProvince() {
 		dbm.openDatabase();
 	 	db = dbm.getDatabase();
@@ -96,6 +106,12 @@ public class DBhelper {
 		return list;
 		
 	}
+
+	/**
+	 * 根据城市的pcode,得到对应的区域
+	 * @param pcode
+	 * @return
+     */
 	public ArrayList<Area> getDistrict(String pcode) {
 		dbm.openDatabase();
 	 	db = dbm.getDatabase();

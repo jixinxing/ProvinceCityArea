@@ -34,7 +34,12 @@ public class DBManager {
     public SQLiteDatabase getDatabase(){
     	return this.database;
     }
- 
+
+    /**
+     * 将数据库写入应用
+     * @param dbfile
+     * @return
+     */
     private SQLiteDatabase openDatabase(String dbfile) {
         try {
         	file = new File(dbfile);
@@ -66,6 +71,8 @@ public class DBManager {
         }
         return null;
     }
+
+
     public void closeDatabase() {
     	if(this.database!=null)
     		this.database.close();

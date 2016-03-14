@@ -75,8 +75,7 @@ public class CascadingMenuView extends LinearLayout {
 		firstMenuListView = (ListView) findViewById(R.id.listView);
 		secondMenuListView = (ListView) findViewById(R.id.listView2);
 		thirdMenuListView = (ListView) findViewById(R.id.listView3);
-		// setBackgroundDrawable(getResources().getDrawable(
-		// R.drawable.choosearea_bg_left));
+
 
 		// 初始化一级主菜单
 		firstMenuListViewAdapter = new MenuItemAdapter(context, menuItem,
